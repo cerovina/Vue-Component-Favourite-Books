@@ -1,0 +1,57 @@
+body {
+  background-color: #eee;
+  max-width: 550px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+font-size: 30px;
+margin: auto;
+margin-left: 80px;
+}
+
+.favouritesWord {
+  color: #B8860B;
+}
+
+p, h3, ul {
+  margin: 15px;
+  font-size: 15px;
+}
+
+p {
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+li {
+  list-style-type: none;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;        
+}
+
+.img {
+  width: 100px;
+  padding: 25px;
+}
+
+.fav {
+  background-color: #B8860B;
+  color: white;
+}
+
+.link {
+  text-align: center;
+}
+
+.show {
+  text-align: center;
+}

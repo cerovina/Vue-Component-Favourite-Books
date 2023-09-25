@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Practice</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+
+<div id="app">
+
+<h1>Select books to add to <span class="favouritesWord">favourites!</span></h1>
+
+  <div v-if="showBooks">
+    <ul>
+      <li v-for="book in books" :class="{fav: book.isFav}" @click="pickFav(book)"> <!-- "book" can be anything but make it descriptive -->
+        <img class="img" :src="book.img" :alt="book.title">
+        <h3>{{book.title}}</h3>
+        <p>{{book.author}}</p>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="show">
+    <button @click ="toggleShowBooks">
+     <span v-if="showBooks">Hide Books</span>
+      <span v-else>Show Books</span>
+    </button>
+  <div v-show="showBooks">Check these out!</div>
+  </div>
+
+   <br>
+
+</div>
+
+    
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
